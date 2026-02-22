@@ -1,0 +1,298 @@
+/**
+ * Catppuccin Macchiato Theme
+ *
+ * Palette reference: https://github.com/catppuccin/catppuccin
+ *
+ * --ctp-base:      #24273a
+ * --ctp-mantle:    #1e2030
+ * --ctp-crust:     #181926
+ * --ctp-surface0:  #363a4f
+ * --ctp-surface1:  #494d64
+ * --ctp-surface2:  #5b6078
+ * --ctp-overlay0:  #6e738d
+ * --ctp-overlay1:  #8087a2
+ * --ctp-subtext0:  #a5adcb
+ * --ctp-subtext1:  #b8c0e0
+ * --ctp-text:      #cad3f5
+ * --ctp-lavender:  #b7bdf8
+ * --ctp-mauve:     #c6a0f6
+ * --ctp-teal:      #8bd5ca
+ * --ctp-sky:       #91d7e3
+ * --ctp-blue:      #8aadf4
+ * --ctp-peach:     #f5a97f
+ * --ctp-rosewater: #f4dbd6
+ */
+
+/* Body */
+body {
+  background: #24273a;
+  color: #a5adcb;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #b8c0e0;
+}
+
+/* Link Container */
+.t-link-container {
+  color: inherit;
+  display: block;
+}
+
+.t-link-container:hover,
+.t-link-container:focus,
+.t-link-container:active {
+  color: inherit;
+}
+
+.t-link-container .t-link-container__item--blended {
+  color: inherit;
+}
+
+/* Links — Mauve accent */
+a,
+.t-link-container .t-link-container__item,
+.t-link-container:hover .t-link-container__item--blended {
+  color: #c6a0f6;
+}
+
+a:hover,
+a:focus,
+a:active,
+.t-link-container:hover .t-link-container__item {
+  color: #b7bdf8;
+}
+
+/* Horizontal Rulers & Borders */
+hr,
+.t-border-color {
+  border-color: #363a4f;
+}
+
+hr,
+.t-border-color-bg {
+  background: #363a4f;
+}
+
+/* Primary Color — Mauve */
+.t-primary-color,
+.t-primary-color-line {
+  color: #c6a0f6;
+}
+
+.t-primary-bg,
+.t-primary-color-line {
+  background: #c6a0f6;
+}
+
+/* Preloader Spinner */
+.t-preloader__spinner:not(:required):before {
+  border-top-color: #c6a0f6;
+  border-bottom-color: #c6a0f6;
+}
+
+/* Preloader background */
+.c-preloader {
+  background: #24273a;
+}
+
+/* Brand Colors */
+.t-title__first-word {
+  color: #cad3f5;
+}
+
+.t-title__second-word {
+  color: #c6a0f6;
+}
+
+.t-sub-title {
+  color: #a5adcb;
+}
+
+/* Brand Typography (keep same sizing) */
+.t-title {
+  font-size: 4.8rem;
+  line-height: 0.91;
+}
+
+.t-title__first-word {
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+.t-title__second-word {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.t-sub-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-left: .3rem;
+}
+
+/* Icons */
+.fas, .far, .fal, .fab {
+  color: #5b6078;
+}
+
+/* Social Buttons */
+.t-social-button {
+  background: #363a4f;
+  border-color: #363a4f;
+}
+
+.t-social-button .fas,
+.t-social-button .far,
+.t-social-button .fal,
+.t-social-button .fab {
+  color: #8087a2;
+}
+
+.t-social-button:hover {
+  background: #494d64;
+}
+
+.t-social-button:hover .fas,
+.t-social-button:hover .far,
+.t-social-button:hover .fal,
+.t-social-button:hover .fab {
+  color: #c6a0f6;
+}
+
+/* Image Overlay */
+.t-image-overlay {
+  background: #24273a;
+}
+
+.t-image-overlay * {
+  color: #cad3f5;
+}
+
+.t-image-overlay:hover img {
+  opacity: 0.4;
+}
+
+.t-image-overlay__deco-line {
+  color: #8087a2;
+  background: #8087a2;
+}
+
+/* Transitions */
+a, button, a .fa,
+.t-link-container .t-link-container__item,
+.t-link-container .t-link-container__item--blended {
+  transition: all .15s linear;
+}
+
+/* Sections */
+.t-section__header {
+  background: #1e2030;
+}
+
+.t-section__content,
+.t-section--header .t-section__header {
+  background: #24273a;
+}
+
+.t-section__content-border-color {
+  border-color: #24273a;
+}
+
+.t-timeline__point {
+  box-shadow: 0 0 0 6px #24273a;
+}
+
+/* Section heading text */
+.o-section__heading {
+  color: #cad3f5;
+}
+
+/* Section description text */
+.o-section__description {
+  color: #a5adcb;
+}
+
+/* Progress bar filler — Mauve */
+.c-progress-bar__filler {
+  background: #c6a0f6;
+}
+
+/* Number/percentage color */
+.c-number {
+  color: #c6a0f6;
+}
+
+/* Timeline points */
+.c-timeline__point {
+  background: #c6a0f6;
+}
+
+/* Work metadata */
+.c-work__timeframe {
+  color: #8087a2;
+}
+
+.c-work__heading {
+  color: #cad3f5;
+}
+
+.c-work__title {
+  color: #b8c0e0;
+}
+
+.c-work__location {
+  color: #6e738d;
+}
+
+/* Footer */
+.o-section--footer .t-section__header {
+  background: #1e2030;
+}
+
+.o-section--footer .t-section__content {
+  background: #181926;
+}
+
+/* Contact section footer text */
+.c-footer__brand .c-brand__title .t-title__first-word,
+.c-footer__brand .c-brand__sub-title {
+  color: #8087a2;
+}
+
+/* Mobile responsive */
+@media (max-width: 1023px) {
+  .t-section__header {
+    border-top: 1px solid #363a4f;
+    border-bottom: 1px solid #363a4f;
+  }
+  .t-section--header .t-section__header {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+/* Desktop — alternating section colors */
+@media (min-width: 1024px) {
+  /* Odd Sections */
+  .t-section,
+  .t-section__header,
+  .t-section--header .t-section__header {
+    background: #1e2030;
+  }
+  .t-section__content {
+    background: #24273a;
+  }
+  /* Even Sections */
+  .t-section:nth-child(even),
+  .t-section:nth-child(even) .t-section__header {
+    background: #1b1d2b;
+  }
+  .t-section:nth-child(even) .t-section__content {
+    background: #21243a;
+  }
+  .t-section:nth-child(even) .t-timeline__point {
+    box-shadow: 0 0 0 6px #21243a;
+  }
+}
